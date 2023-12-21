@@ -35,11 +35,17 @@ alias vim=nvim
 function ffd () {
   target_path="$(fd --type d --hidden --exclude .git | fzf)"
   if [ "$target_path" != "" ]; then
-    cd $target_path;
+    cd $target_path
   fi
 }
 # open file in nvim with fzf
-alias ffv='fd --type f --hidden --exclude .git | fzf | xargs nvim'
+function ffv () {
+  target_path="$(fd --type f --hidden --exclude .git | fzf)"
+  if [ "$target_path" != "" ]; then
+    vim $target_path
+  fi
+}
+# alias ffv='fd --type f --hidden --exclude .git | fzf | xargs nvim'
 
 alias mupdf=mupdf-gl
 
