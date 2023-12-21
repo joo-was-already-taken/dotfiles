@@ -1,0 +1,7 @@
+[character]
+success_symbol = '[❯❯](bold green)[❯](bold bright-green)'
+error_symbol = '[❯❯](bold red)[❯](bold bright-red)'
+vimcmd_symbol = '[vim](bold yellow)'
+vimcmd_replace_one_symbol = '[vi](bold yellow)[❯](bold purple)'
+vimcmd_replace_symbol = '[vi](bold yellow)[❯](bold purple)'
+vimcmd_visual_symbol = '[vi](bold yellow)[❯](bold yellow)'
