@@ -34,14 +34,14 @@ alias vim=nvim
 # cd to dir with fzf
 function ffd () {
   target_path="$(fd --type d --hidden --exclude .git | fzf)"
-  if [ "$target_path" != "" ]; then
+  if [ $? = 0 ]; then
     cd $target_path
   fi
 }
 # open file in nvim with fzf
 function ffv () {
   target_path="$(fd --type f --hidden --exclude .git | fzf)"
-  if [ "$target_path" != "" ]; then
+  if [ $? = 0 ]; then
     vim $target_path
   fi
 }
