@@ -25,6 +25,9 @@ y = 0
 multiplier = 8
 
 
+# [font]
+# size = 7.5
+
 [font.normal]
 family = "JetBrainsMonoNLNerdFont"
 style = "Medium"
@@ -40,5 +43,3 @@ style = "MediumItalic"
 [font.bold_italic]
 family = "JetBrainsMonoNLNerdFont"
 style = "BoldItalic"
-
-

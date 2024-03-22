@@ -54,8 +54,15 @@ alias python='/usr/bin/python3.12'
 alias py=python
 alias pytest='python -m pytest -W ignore::DeprecationWarning'
 
+alias ip='ip -color=auto'
+
 # sussy
 alias sus='systemctl suspend'
+
+alias cmake='~/cmake-3.29.0-rc3-linux-x86_64/bin/cmake'
+
+# haskell
+#[ -f "/home/joo/.ghcup/env" ] && source "/home/joo/.ghcup/env" # ghcup-env
 
 # completion for zsh
 fpath+=${ZDOTDIR:-~}/.zsh_functions
@@ -66,3 +73,9 @@ source /home/joo/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
 
 # if [ "$TMUX" = "" ]; then tmux; fi
+
+[ -f "/home/joo/.ghcup/env" ] && source "/home/joo/.ghcup/env" # ghcup-env
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
