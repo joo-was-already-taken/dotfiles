@@ -50,10 +50,10 @@ function pomodoro () {
   i=0
   while true; do
     countdown 25m
-    spd-say "Finished repetition number ${i}"
+    spd-say "Finished cycle number ${i}"
     ((i++))
     countdown 5m
-    spd-say "Starting repetition number ${i}"
+    spd-say "Starting cycle number ${i}"
   done
 }
 
@@ -62,7 +62,7 @@ alias mupdf=mupdf-gl
 # python stuff
 # alias python='/usr/bin/python3.12'
 alias py=/usr/bin/python3.12
-alias pytest='python -m pytest -W ignore::DeprecationWarning'
+alias pytest='py -m pytest -W ignore::DeprecationWarning'
 
 alias ip='ip -color=auto'
 
