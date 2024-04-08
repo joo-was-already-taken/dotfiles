@@ -50,8 +50,8 @@ function ffv () {
 alias mupdf=mupdf-gl
 
 # python stuff
-alias python='/usr/bin/python3.12'
-alias py=python
+# alias python='/usr/bin/python3.12'
+alias py=/usr/bin/python3.12
 alias pytest='python -m pytest -W ignore::DeprecationWarning'
 
 alias ip='ip -color=auto'
