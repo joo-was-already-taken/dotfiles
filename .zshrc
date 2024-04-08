@@ -45,7 +45,17 @@ function ffv () {
     vim $target_path
   fi
 }
-# alias ffv='fd --type f --hidden --exclude .git | fzf | xargs nvim'
+
+function pomodoro () {
+  i=0
+  while true; do
+    countdown 25m
+    spd-say "Finished repetition number ${i}"
+    ((i++))
+    countdown 5m
+    spd-say "Starting repetition number ${i}"
+  done
+}
 
 alias mupdf=mupdf-gl
 
