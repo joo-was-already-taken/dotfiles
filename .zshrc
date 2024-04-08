@@ -48,13 +48,17 @@ function ffv () {
 
 function pomodoro () {
   i=0
+  trap break SIGINT
   while true; do
     countdown 25m
+    sleep 0.2
     spd-say "Finished cycle number ${i}"
     ((i++))
     countdown 5m
+    sleep 0.2
     spd-say "Starting cycle number ${i}"
   done
+  trap - SIGINT
 }
 
 alias mupdf=mupdf-gl
