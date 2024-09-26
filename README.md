@@ -3,8 +3,8 @@ My personal dotfiles for debian
 
 ### Dotfiles structure
 ```
-dotfiles
-├── .config
+.
+├── .config/
 │   ├── alacritty/
 │   ├── nvim/
 │   ├── starship.toml
