@@ -19,7 +19,7 @@ local ensure_installed = {
 	"cssls",
 	"html",
 	"jsonls",
-	"tsserver",
+	-- "tsserver",
 	-- "ltex",
 	"lua_ls",
 	"marksman",

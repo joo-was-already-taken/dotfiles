@@ -75,6 +75,9 @@ alias sus='systemctl suspend'
 
 alias cmake='~/cmake-3.29.0-rc3-linux-x86_64/bin/cmake'
 
+# use nvim as a manpager
+export MANPAGER="$(which nvim) --remote -c 'Man!' -o -"
+
 # haskell
 #[ -f "/home/joo/.ghcup/env" ] && source "/home/joo/.ghcup/env" # ghcup-env
 
