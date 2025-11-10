@@ -1,3 +1,5 @@
+> I'm using NixOS now and moved all my dotfiles to my NixOS config.
+
 # My .dotfiles
 My personal dotfiles for debian
 
